@@ -14,11 +14,11 @@ function generateTask(newTask) {
 }
 
 function addTaskInTodo (newTask){
-    todoField.innerHTML+= `<div class="tasks task_button"><input type="checkbox" id="${newTask.id}" onclick=completeTask(${newTask.id})> ${newTask.text} <button class="button-delete" onclick=deleteTodo(${newTask.id})><span class="material-icons delete">delete</span></button> <button onclick=editTask(${newTask.id})> edit </button> </div>` 
+    todoField.innerHTML+= `<div class="tasks task_button"><input type="checkbox" id="${newTask.id}" onclick=completeTask(${newTask.id})> ${newTask.text} <button class="button-delete" onclick=deleteTodo(${newTask.id})><img  class="deleteButton" src="assets/delete.svg"></button> <button onclick=editTask(${newTask.id})> <img class="editButton" src="assets/edit.svg"> </button> </div>` 
 }
 
 function addTaskInCompleted (newTask){
-    completedField.innerHTML+= `<div class="tasks task_button"><input type="checkbox" id="${newTask.id}" onclick=uncompleteTask(${newTask.id}) checked> ${newTask.text} <button class="button-delete" onclick=deleteCompleted(${newTask.id})><span class="material-icons delete">delete</span></button> </div>` 
+    completedField.innerHTML+= `<div class="tasks task_button"><input type="checkbox" id="${newTask.id}" onclick=uncompleteTask(${newTask.id}) checked> ${newTask.text} <button class="button-delete" onclick=deleteCompleted(${newTask.id})><img  class="deleteButton" src="assets/delete.svg"></button> </div>` 
 }
 
 
