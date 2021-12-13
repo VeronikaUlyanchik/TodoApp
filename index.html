@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To do App</title>
+</head>
+<body>
+    <header>
+        <div class="icon"><img src="assets/icon.PNG"><p>To-do</p></div>
+        <div class="textTasks">Tasks</div>
+        <div class="userLogo">User</div>
+    </header>
+    <main>
+        <div class="menu"></div>
+        <div class="tasksField">
+            <form class="js-form">
+                <input type="text" id="inputtask" class="input" placeholder="Add your new todo" required>
+                <button class="button-plus" id="btn_add_task" ><span class="material-icons">add_box</span></button>
+                
+            </form>
+            <button class="button-plus" id="btn_edit_task" ><span class="material-icons">edit</span></button>
+                <div class="todotasks"></div>
+                <button id="clearall" class="button-clear" onclick="clearAll()">Clear All</button>
+        </div>
+        <div class="completed"></div>
+    </main>
+    <script src="addTaks.js"></script>
+    <script src="completeTask.js"></script>
+    <script src="clearTask.js"></script>
+    <script src="editTask.js"></script>
+</html>
