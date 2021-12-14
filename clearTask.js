@@ -7,6 +7,7 @@ function deleteTodo(id) {
      tasks.forEach(t => {
          generateTask(t)
      });
+     amountTasks();
 };
 
 function deleteCompleted(id) {
@@ -18,10 +19,5 @@ function deleteCompleted(id) {
      completedTask.forEach(t => {
          generateTask(t)
      });
+     amountTasks();
 };
-
-function clearAll() {
-tasks=[];
-localStorage.clear();
-todoField.innerHTML="";
-}

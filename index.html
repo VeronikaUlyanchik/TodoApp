@@ -11,23 +11,28 @@
     <header>
         <div class="icon"><img src="assets/clipboard.svg"><p>To-do</p></div>
         <div class="textTasks">Tasks</div>
-        <div class="userLogo">User</div>
+        <div class="userLogo">Leanne Graham<img src="assets/manIcon.png"><img src="assets/expand_more_black_24dp.svg"></div>
     </header>
     <main>
-        <div class="menu"></div>
+        <div class="menu">
+            <div>
+                <img src="assets/list.svg">
+                <img src="assets/accept.svg">
+            </div>
+        </div>
         <div class="tasksField">
             <form class="js-form">
-                <input type="text" id="inputtask" class="input" placeholder="Add your new todo" required>
+                <input type="text" id="inputtask" class="input" placeholder="+ Add a task, press Enter to save" required>
                 <button class="button-plus" id="btn_add_task" >Add</button>
-                
+                <button class="button-plus" id="btn_edit_task" style="display: none;">Save</button>
             </form>
-            <button class="button-plus" id="btn_edit_task" style="display: none;">Save</button>
-            <h2>To do(<span></span>)</h2>
+            <h4>Total:(<span id="totalQ"></span>) </h4>
+            <h2>To do(<span id="todosQ"></span>)</h2>
                 <div class="todotasks"></div>
                
         </div>
         <div class="completedTask">
-            <h2>Completed(<span></span>)</h2>
+            <h2>Completed(<span id="completedQ"></span>)</h2>
             <div class="completed"></div>
             </div>
     </main>
@@ -35,4 +40,5 @@
     <script src="completeTask.js"></script>
     <script src="clearTask.js"></script>
     <script src="editTask.js"></script>
+    <script src="generatePage.js"></script>
 </html>
