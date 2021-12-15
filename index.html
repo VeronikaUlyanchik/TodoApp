@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css/styles.css">
+    <link rel="stylesheet" href="styles/css/mobile.css">
     <title>To do App</title>
 </head>
 <body>
@@ -20,21 +21,22 @@
                 <img src="assets/accept.svg">
             </div>
         </div>
-        <div class="tasksField">
-            <form class="js-form">
-                <input type="text" id="inputtask" class="input" placeholder="+ Add a task, press Enter to save" required>
-                <button class="button-plus" id="btn_add_task" >Add</button>
-                <button class="button-plus" id="btn_edit_task" style="display: none;">Save</button>
-            </form>
-            <h4>Total:(<span id="totalQ"></span>) </h4>
-            <h2>To do(<span id="todosQ"></span>)</h2>
-                <div class="todotasks"></div>
-               
-        </div>
-        <div class="completedTask">
-            <h2>Completed(<span id="completedQ"></span>)</h2>
-            <div class="completed"></div>
+        <div class="allTaskField">
+            <div class="tasksField">
+                <form class="js-form">
+                    <input type="text" id="inputtask" class="input" placeholder="+ Add a task, press Enter to save" required>
+                    <button class="button-plus" id="btn_add_task" >Add</button>
+                    <button class="button-plus" id="btn_edit_task" style="display: none;">Save</button>
+                </form>
+                <h4>Total:(<span id="totalQ"></span>) </h4>
+                <h2>To do(<span id="todosQ"></span>)</h2>
+                    <div class="todotasks"></div>      
             </div>
+            <div class="completedTask">
+                <h2>Completed(<span id="completedQ"></span>)</h2>
+                <div class="completed"></div>
+                </div>
+        </div>
     </main>
     <script src="addTaks.js"></script>
     <script src="completeTask.js"></script>
