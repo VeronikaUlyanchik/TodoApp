@@ -1,4 +1,5 @@
-function deleteTodo(id) {     
+function deleteTodo(id) {
+        
     const index=tasks.findIndex(item => item.id === id);
      tasks.splice(index, 1);
      todoField.innerHTML="";
@@ -9,15 +10,14 @@ function deleteTodo(id) {
      amountTasks();
 };
 
-function deleteCompleted(id) { 
+function deleteCompleted(id) {
+        
     const index=completedTask.findIndex(item => item.id === id);
     completedTask.splice(index, 1);
     completedField.innerHTML="";
-    fetch(`https://jsonplaceholder.typicode.com/posts/'${id}`, {
-        method: 'DELETE',
-      });
+     localStorage.setItem('completedtasks', JSON.stringify(completedTask));
      completedTask.forEach(t => {
          generateTask(t)
      });
-        amountTasks();
+     amountTasks();
 };
