@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <link rel="stylesheet" href="styles/css/mobile.css">
     <title>To do App</title>
 </head>
 <body>
     <header>
-        <div class="icon"><img src="assets/icon.PNG"><p>To-do</p></div>
+        <div class="icon"><img src="assets/clipboard.svg"><p>To-do</p></div>
         <div class="textTasks">Tasks</div>
-        <div class="userLogo">User</div>
+        <div class="userLogo">Leanne Graham<img src="assets/manIcon.png"><img src="assets/expand_more_black_24dp.svg"></div>
     </header>
     <main>
-        <div class="menu"></div>
-        <div class="tasksField">
-            <form class="js-form">
-                <input type="text" id="inputtask" class="input" placeholder="Add your new todo" required>
-                <button class="button-plus" id="btn_add_task" ><span class="material-icons">add_box</span></button>
-                
-            </form>
-            <button class="button-plus" id="btn_edit_task" ><span class="material-icons">edit</span></button>
-                <div class="todotasks"></div>
-                <button id="clearall" class="button-clear" onclick="clearAll()">Clear All</button>
+        <div class="menu">
+            <div>
+                <img src="assets/list.svg">
+                <img src="assets/accept.svg">
+            </div>
         </div>
-        <div class="completed"></div>
+        <div class="allTaskField">
+            <div class="tasksField">
+                <form class="js-form">
+                    <input type="text" id="inputtask" class="input" placeholder="+ Add a task, press Enter to save" required>
+                    <button class="button-plus" id="btn_add_task" >Add</button>
+                    <button class="button-plus" id="btn_edit_task" style="display: none;">Save</button>
+                </form>
+                <h4>Total:(<span id="totalQ"></span>) </h4>
+                <h2>To do(<span id="todosQ"></span>)</h2>
+                    <div class="todotasks"></div>      
+            </div>
+            <div class="completedTask">
+                <h2>Completed(<span id="completedQ"></span>)</h2>
+                <div class="completed"></div>
+                </div>
+        </div>
     </main>
     <script src="addTaks.js"></script>
     <script src="completeTask.js"></script>
     <script src="clearTask.js"></script>
     <script src="editTask.js"></script>
+    <script src="generatePage.js"></script>
 </html>

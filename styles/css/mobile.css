@@ -1,0 +1,40 @@
+@media (max-width: 800px) {
+    .allTaskField {
+        flex-direction: column;
+    }
+    .todotasks{
+        margin: 0;
+        height: 150px;
+    }
+    .tasksField{
+        flex-grow: 0;
+        margin: 24px 10px
+    }
+    .completedTask {
+        width: 93%;
+        margin: 0 10px 20px;
+    }
+    .completed {
+        height: 204px;
+    } 
+    h4 {
+    width: 70px;
+    font-size: 11px;
+}
+h2 {
+    font-size: 18px;
+}
+.tasks {
+    padding: 4px;
+    font-size: 16px;
+}
+.js-form input {
+    height: 47px;
+    font-size: 16px;
+    padding: 7px;
+}
+.button-plus {
+    height: 46px;
+    font-size: 14px;
+}
+}

@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Lato; 
+    src: url(C:/Users/user/TodoApp/assets/Lato-Regular.ttf); 
+   }
+
+body{
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+button{
+    border: none;
+    background: white;
+    cursor: pointer;
+    border: 2px solid white ;
+    box-sizing: border-box;
+    margin: 0 5px;
+}
+button:hover{
+    border: 2px solid #550dc9 ;
+}
+header{
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    box-shadow:  0 7px 2px rgb(0 0 0 / 3%);
+}
+
+header img{
+   width: 36px; 
+}
+.icon {
+    width: 65px;
+    text-align: center;
+    margin-right: 20px;
+}
+div.icon p{
+    font-size: 14px;
+    margin: 0px;
+}
+.textTasks{
+    font-size: 25px;
+    width: 100%;
+    font-weight: 900;
+    text-align: left;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+}
+.allTaskField {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.tasksField{
+    flex-grow: 1;
+    margin: 24px;
+    position: relative;
+}
+.completedTask {
+    width: 360px;
+    margin: 24px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.button-plus{
+    background-color: #550dc9;
+    color: white;
+    border: none;
+    width: 50px;
+    border-radius: 11px;
+    height: 60px;
+    font-size: 15px;
+}
+.js-form{
+    display: flex;
+    justify-content: flex-start;
+}
+.js-form input {
+    flex-grow: 1;
+    height: 60px;
+    border: 1px solid gainsboro;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+}
+.menu {
+    background-color:#550dc9;
+    width: 70px;
+    height: 100vh;
+}
+.todotasks{
+    margin: 20px 0px;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 431px;
+    box-sizing: content-box;
+}
+.tasks {
+    border: 1px solid gainsboro;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    position: relative;
+    white-space: pre-wrap;
+   word-break: break-all;
+}
+.deleteButton {
+    width: 25px;
+    margin: 0px -10px;
+}
+.editButton{
+    width: 22px;
+}
+.completed{
+    overflow: hidden;
+    overflow-y: auto;
+    height: 431px;
+}
+.task_button {
+    display: flex;
+}
+.userLogo {
+    display: flex;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.userLogo img:first-child{
+    width: 60px;
+}
+.userLogo img:nth-child(2){
+    width: 34px;
+}
+.menu img:first-child{
+    width: 43px;
+    position: relative;
+    top: 9px;
+    left: 10px;
+}
+.menu img:nth-child(2){
+        width: 23px;
+        position: relative;
+        top: -13px;
+        left: -40px;
+}
+.menu div{
+    background-color: #440ba0;
+    width: 100%;
+    height: 60px;
+    margin: 23px 0;
+}
+h4 {
+    color: #793ed4;
+    background-color: #fef6ff;
+    width: 70px;
+    font-weight: lighter;
+    padding: 5px;
+}

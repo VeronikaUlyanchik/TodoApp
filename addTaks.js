@@ -5,21 +5,8 @@ const inputTask = document.getElementById('inputtask');
 const todoField = document.querySelector('.todotasks');
 const completedField = document.querySelector('.completed');
 let completedTask= [];
-!localStorage.completedTask ? completedTask=[] : completedTask = JSON.parse(localStorage.getItem('completedtasks'));
-
-
-
-function generateTask(newTask) {
-    newTask.checked ? addTaskInCompleted(newTask) : addTaskInTodo (newTask); 
-}
-
-function addTaskInTodo (newTask){
-    todoField.innerHTML+= `<div class="tasks task_button"><input type="checkbox" id="${newTask.id}" onclick=completeTask(${newTask.id})> ${newTask.text} <button class="button-delete" onclick=deleteTodo(${newTask.id})><span class="material-icons delete">delete</span></button> <button onclick=editTask(${newTask.id})> edit </button> </div>` 
-}
-
-function addTaskInCompleted (newTask){
-    completedField.innerHTML+= `<div class="tasks task_button"><input type="checkbox" id="${newTask.id}" onclick=uncompleteTask(${newTask.id}) checked> ${newTask.text} <button class="button-delete" onclick=deleteCompleted(${newTask.id})><span class="material-icons delete">delete</span></button> </div>` 
-}
+const addBtn = document.getElementById('btn_add_task');
+!localStorage.completedtasks ? completedTask=[] : completedTask = JSON.parse(localStorage.getItem('completedtasks'));
 
 
     form.addEventListener('submit', event => {
@@ -39,6 +26,7 @@ function addItem(text) {
             tasks.push(newTask);
             localStorage.setItem('tasks', JSON.stringify(tasks));
             generateTask(newTask);
+            amountTasks();
     }
 
     document.addEventListener('DOMContentLoaded', () => {
