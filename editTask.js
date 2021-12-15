@@ -8,6 +8,7 @@ function editTask(id) {
     editBtn.style.display = 'block';
     addBtn.style.display = 'none';
     addBtn.setAttribute("disabled", "disabled");
+    inputTask.focus();
     indexForEdit=indexEdit;
 }
 
