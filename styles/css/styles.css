@@ -1,171 +1,238 @@
+.tasks, main .allTaskField, main, .userLogo, header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.completed, .todotasks, .completedTask {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
 @font-face {
-    font-family: Lato; 
-    src: url(C:/Users/user/TodoApp/assets/Lato-Regular.ttf); 
-   }
-
-body{
-    margin: 0;
-    min-height: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family: 'Lato', sans-serif;
+  font-family: Lato;
+  src: url(C:/Users/user/TodoApp/assets/Lato-Regular.ttf);
 }
-button{
-    border: none;
-    background: white;
-    cursor: pointer;
-    border: 2px solid white ;
-    box-sizing: border-box;
-    margin: 0 5px;
-}
-button:hover{
-    border: 2px solid #550dc9 ;
-}
-header{
-    height: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0px;
-    box-shadow:  0 7px 2px rgb(0 0 0 / 3%);
+body {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
 }
 
-header img{
-   width: 36px; 
+button {
+  border: none;
+  background: white;
+  cursor: pointer;
+  border: 2px solid white;
+  box-sizing: border-box;
+  margin: 0 5px;
 }
+button:hover {
+  border: 2px solid #550dc9;
+}
+
+header {
+  width: auto;
+  height: 20px;
+  align-items: center;
+  padding: 30px 0px;
+  box-shadow: 0 7px 2px rgba(0, 0, 0, 0.03);
+}
+header img {
+  width: 36px;
+}
+
 .icon {
-    width: 65px;
-    text-align: center;
-    margin-right: 20px;
+  width: 65px;
+  height: auto;
+  text-align: center;
+  margin-right: 20px;
 }
-div.icon p{
-    font-size: 14px;
-    margin: 0px;
+.icon p {
+  font-size: 14px;
+  margin: 0px;
 }
-.textTasks{
-    font-size: 25px;
-    width: 100%;
-    font-weight: 900;
-    text-align: left;
+
+.textTasks {
+  font-size: 25px;
+  width: 100%;
+  height: auto;
+  font-weight: 900;
+  text-align: left;
 }
+
+.userLogo {
+  width: 300px;
+  height: 60px;
+  align-items: center;
+}
+.userLogo img:first-child {
+  width: 60px;
+  height: auto;
+}
+.userLogo img:nth-child(2) {
+  width: 34px;
+  height: auto;
+}
+
 main {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    justify-content: space-between;
+  width: auto;
+  height: 100%;
 }
-.allTaskField {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
+main .allTaskField {
+  flex-grow: 1;
 }
-.tasksField{
-    flex-grow: 1;
-    margin: 24px;
-    position: relative;
+
+.tasksField {
+  flex-grow: 1;
+  margin: 24px;
+  position: relative;
 }
+
 .completedTask {
-    width: 360px;
-    margin: 24px;
-    overflow: hidden;
-    overflow-y: auto;
+  width: 360px;
+  height: auto;
+  margin: 24px;
 }
-.button-plus{
-    background-color: #550dc9;
-    color: white;
-    border: none;
-    width: 50px;
-    border-radius: 11px;
-    height: 60px;
-    font-size: 15px;
+
+.button-plus {
+  width: 50px;
+  height: 60px;
+  background-color: #550dc9;
+  color: white;
+  border-radius: 11px;
+  font-size: 15px;
 }
-.js-form{
-    display: flex;
-    justify-content: flex-start;
+
+.js-form {
+  display: flex;
+  justify-content: flex-start;
 }
 .js-form input {
-    flex-grow: 1;
-    height: 60px;
-    border: 1px solid gainsboro;
-    box-sizing: border-box;
-    font-size: 16px;
-    padding: 10px;
+  flex-grow: 1;
+  width: auto;
+  height: 60px;
+  border: 1px solid gainsboro;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 10px;
 }
+
 .menu {
-    background-color:#550dc9;
-    width: 70px;
-    height: 100vh;
+  background-color: #550dc9;
+  width: 70px;
+  height: 100vh;
 }
-.todotasks{
-    margin: 20px 0px;
-    overflow: hidden;
-    overflow-y: auto;
-    width: 100%;
-    height: 431px;
-    box-sizing: content-box;
+.menu div {
+  background-color: #440ba0;
+  width: 100%;
+  height: 60px;
+  margin: 23px 0;
 }
+.menu img:first-child {
+  width: 43px;
+  position: relative;
+  top: 9px;
+  left: 10px;
+}
+.menu img:nth-child(2) {
+  width: 23px;
+  position: relative;
+  top: -13px;
+  left: -40px;
+}
+
+.todotasks {
+  margin: 20px 0px;
+  width: 100%;
+  height: 431px;
+}
+
 .tasks {
-    border: 1px solid gainsboro;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0px;
-    position: relative;
-    white-space: pre-wrap;
-   word-break: break-all;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  margin: 10px 0px;
+  position: relative;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
+
 .deleteButton {
-    width: 25px;
-    margin: 0px -10px;
+  width: 25px;
+  margin: 0px -10px;
 }
-.editButton{
-    width: 22px;
+
+.editButton {
+  width: 22px;
 }
-.completed{
-    overflow: hidden;
-    overflow-y: auto;
-    height: 431px;
+
+.completed {
+  height: 431px;
 }
+
 .task_button {
-    display: flex;
+  display: flex;
 }
-.userLogo {
-    display: flex;
-    width: 300px;
-    height: 60px;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-}
-.userLogo img:first-child{
-    width: 60px;
-}
-.userLogo img:nth-child(2){
-    width: 34px;
-}
-.menu img:first-child{
-    width: 43px;
-    position: relative;
-    top: 9px;
-    left: 10px;
-}
-.menu img:nth-child(2){
-        width: 23px;
-        position: relative;
-        top: -13px;
-        left: -40px;
-}
-.menu div{
-    background-color: #440ba0;
-    width: 100%;
-    height: 60px;
-    margin: 23px 0;
-}
+
 h4 {
-    color: #793ed4;
-    background-color: #fef6ff;
-    width: 70px;
-    font-weight: lighter;
-    padding: 5px;
+  color: #793ed4;
+  background-color: #fef6ff;
+  width: 70px;
+  font-weight: lighter;
+  padding: 5px;
 }
+
+@media (max-width: 800px) {
+    main .allTaskField {
+    flex-direction: column;  
+    justify-content: normal;
+  }
+
+  .todotasks {
+    margin: 0;
+    height: 150px;
+  }
+
+  .tasksField {
+    flex-grow: 0;
+    margin: 24px 10px;
+  }
+
+  .completedTask {
+    width: 96%;
+    margin: 0 10px 20px;
+  }
+
+  .completed {
+    height: 204px;
+  }
+
+  h4 {
+    width: 70px;
+    font-size: 11px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .tasks {
+    padding: 4px;
+    font-size: 16px;
+  }
+
+  .js-form input {
+    height: 47px;
+    font-size: 16px;
+    padding: 7px;
+  }
+
+  .button-plus {
+    height: 46px;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
